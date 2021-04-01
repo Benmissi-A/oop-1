@@ -1,4 +1,4 @@
-const Point = require('./pointClass')
+const {Point} = require('./pointClass')
 
 // p1 est une instance de Point
 const p1 = new Point(1, 2)

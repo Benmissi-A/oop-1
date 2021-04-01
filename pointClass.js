@@ -13,5 +13,4 @@ class Point {
   return (Math.sqrt((this.x - target.x)*(this.x - target.x) + (this.y  - target.y)*(this.y  - target.y)))
   }
 }
-
-exports.Point
+exports.Point = Point
