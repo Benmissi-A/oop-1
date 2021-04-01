@@ -16,7 +16,7 @@ const charlie = {
   age: 8
 }
 
-const majority = 18 
+
 const canVote = (person) => {
   return person.age < 18 ? false : true
 }
