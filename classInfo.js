@@ -22,9 +22,8 @@ const alice = new Human('Alice','Liddell',28,['php','symfony','laravel','ruby','
  const bob = new Human('Bob','Lemon',28,['react','angular','javascript']);
 const charlie = new Human('Charlie','Charlot',28,['html','css','bootstrap']);
 
-// alice.printInfo()
-// alice.canVote()
-// alice.printInfo()
+alice.printInfo()
+alice.canVote()
 alice.mostSkilledDev(charlie)
 
 
