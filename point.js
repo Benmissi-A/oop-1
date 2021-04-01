@@ -11,7 +11,7 @@ class Point {
     return this.x === point.x && this.y === point.y ? true : false
   }
   calcDist(target) {
-  return (Math.sqrt((this.x * target.x) + (this.y  * target.y)))
+   return (Math.sqrt((this.x - target.x)*(this.x - target.x) + (this.y  - target.y)*(this.y  - target.y)))
   }
 }
 // p1 est une instance de Point
