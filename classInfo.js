@@ -3,19 +3,29 @@ class Human {
     this.firstName = firstName
     this.lastName = lastName
     this.age = age
-    this.language = language 
+    this.language = language
   }
 
-  printInfo(person){
-  console.log(`First name : ${person.firstName}`)
-  console.log(`Name : ${person.lastName}`)
-  console.log(`Age : ${person.age}`)
+  printInfo(){
+    console.log(`First name : ${this.firstName}`)
+    console.log(`Name : ${this.lastName}`)
+    console.log(`Age : ${this.age}`)
   }
-  canVote(person){
-  return person.age < 18 ? false : true
+  canVote(){
+    console.log(this.age < 18 ? false : true)
   }
-  mostSkilledDev(person1 , person2){
-  return person1.languages.length === person2.languages.length ? 'draw' : person1.languages.length > person2.languages.length ? person1.firstName : person2.firstName 
+  mostSkilledDev(person2){
+  console.log(this.language.length === person2.language.length ? 'draw' : this.language.length > person2.language.length ? this.firstName : person2.firstName)  
   }
-  
 }
+const alice = new Human('Alice','Liddell',28,['php','symfony','laravel','ruby','python'])
+ const bob = new Human('Bob','Lemon',28,['react','angular','javascript']);
+const charlie = new Human('Charlie','Charlot',28,['html','css','bootstrap']);
+
+// alice.printInfo()
+// alice.canVote()
+// alice.printInfo()
+alice.mostSkilledDev(charlie)
+
+
+
